@@ -31,7 +31,7 @@
 
       <tal:condition condition="python:not widget.roleBasedAdd or [role for role in user.getRolesInContext(here) if role in allowRolesToAddKeywords]">
         <div style="width: 45%; float: right;">
-          <span i18n:translate="label_new_categories">New categories</span>
+          <span i18n:translate="label_new_tags">New tags</span>
           <br />
           <input id="entered_subjects"
             name="subject"
@@ -43,8 +43,8 @@
       </tal:condition>
 
       <div style="width: 45%">
-        <span i18n:translate="label_existing_categories">
-            Existing categories
+        <span i18n:translate="label_existing_tags">
+            Existing tags
         </span>
 
         <br />
